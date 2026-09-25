@@ -249,6 +249,12 @@ header.scrolled { box-shadow: 0 4px 25px rgba(0,0,0,0.1); }
   position: relative; overflow: hidden;
 }
 .product-img img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+.product-img img {
   max-width: 80%; max-height: 80%;
   object-fit: contain;
   transition: transform 0.5s ease;
