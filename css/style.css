@@ -429,29 +429,27 @@ footer p { margin-bottom: 0.3rem; }
   gap: 1.5rem; margin: 3rem 0;
 }
 .stat-card {
-  background: white;
-  padding: 2rem 1.5rem;
+  background: linear-gradient(135deg, #4F46E5, #7C3AED);
+  padding: 2.5rem 1.5rem;
   border-radius: var(--radius);
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  border: 1px solid #E2E8F0;
+  box-shadow: 0 8px 24px rgba(79,70,229,0.3);
+  border: none;
   transition: all 0.3s ease;
+  color: white;
 }
 .stat-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(79,70,229,0.15);
-  border-color: var(--primary-light);
+  box-shadow: 0 16px 32px rgba(79,70,229,0.4);
 }
 .stat-card .number {
   font-size: 2.5rem;
   font-weight: 900;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 .stat-card .label {
-  color: var(--text-light);
+  color: rgba(255,255,255,0.9);
   font-size: 0.9rem;
   margin-top: 0.5rem;
   font-weight: 600;
