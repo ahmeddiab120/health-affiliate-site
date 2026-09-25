@@ -5,21 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>صحتك أولاً | مراجعات صادقة لأفضل مكملات صحية</title>
 <meta name="description" content="مراجعات منتجات صحية موثوقة - فيتامينات، مكملات غذائية، وزيوت أوميغا. نصائح صحية مبنية على أبحاث علمية.">
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
   <nav class="nav">
-    <a href="../index.html" class="logo">صحتك <span>أولاً</span></a>
+    <a href="index.html" class="logo">صحتك <span>أولاً</span></a>
     <ul class="nav-links">
-      <li><a href="../index.html">الرئيسية</a></li>
-      <li><a href="../index.html#products">المنتجات</a></li>
-      <li><a href="../index.html#reviews">المراجعات</a></li>
-      <li><a href="../index.html#about">من نحن</a></li>
-      <li><a href="../index.html#contact" class="btn">تواصل معنا</a></li>
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="index.html#products">المنتجات</a></li>
+      <li><a href="index.html#reviews">المراجعات</a></li>
+      <li><a href="index.html#about">من نحن</a></li>
+      <li><a href="index.html#contact" class="btn btn-sm">تواصل</a></li>
     </ul>
-    <button class="hamburger">☰</button>
+    <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')">☰</button>
   </nav>
 </header>
 
@@ -28,6 +28,28 @@
   <h1>صحتك أولاً 💚</h1>
   <p>مراجعات صادقة ومنتجات صحية موثوقة - نختارلك أفضل المكملات بناءً على أبحاث علمية وتجارب حقيقية</p>
   <a href="#products" class="btn">شوف المنتجات</a>
+</section>
+
+<!-- STATS -->
+<section class="section">
+  <div class="stats">
+    <div class="stat-card">
+      <div class="number">6</div>
+      <div class="label">منتج مُراجع</div>
+    </div>
+    <div class="stat-card">
+      <div class="number">100%</div>
+      <div class="label">شفافية العمولة</div>
+    </div>
+    <div class="stat-card">
+      <div class="number">أبحاث</div>
+      <div class="label">مبنية على دراسات</div>
+    </div>
+    <div class="stat-card">
+      <div class="number">💚</div>
+      <div class="label">صحتك أولويتنا</div>
+    </div>
+  </div>
 </section>
 
 <!-- FEATURES -->
@@ -60,57 +82,98 @@
   <div class="products-grid">
 
     <div class="product-card">
-      <div class="product-img">💊</div>
+      <div class="product-img">
+        <span class="badge">الأكثر مبيعاً</span>
+        💊
+      </div>
       <div class="product-info">
         <h3>فيتامين متعدد - New Chapter</h3>
-        <div class="price">$37.97</div>
-        <span class="commission">عمولة 4.5%</span>
+        <div class="price-row">
+          <span class="price">$37.97</span>
+          <span class="commission">عمولة 4.5%</span>
+        </div>
         <p>متعدد الفيتامينات المخمّر للرجال - يدعم المناعة والطاقة</p>
         <a href="https://www.amazon.com/dp/B003DH1S26?tag=YOUR_ASSOC_ID" class="btn" data-affiliate="multivitamin">عرض المنتج</a>
       </div>
     </div>
 
     <div class="product-card">
-      <div class="product-img">🐟</div>
+      <div class="product-img">
+        <span class="badge">🔥 جديد</span>
+        🐟
+      </div>
       <div class="product-info">
         <h3>زيت سمك أوميغا 3 - Wholemega</h3>
-        <div class="price">$49.47</div>
-        <span class="commission">عمولة 4.5%</span>
+        <div class="price-row">
+          <span class="price">$49.47</span>
+          <span class="commission">عمولة 4.5%</span>
+        </div>
         <p>زيت سمك ألاسكا البري - أوميغا 3 + فيتامين D3 للقلب والدماغ</p>
         <a href="https://www.amazon.com/dp/B004UJ84QO?tag=YOUR_ASSOC_ID" class="btn" data-affiliate="omega3">عرض المنتج</a>
       </div>
     </div>
 
     <div class="product-card">
-      <div class="product-img">🌿</div>
+      <div class="product-img">
+        <span class="badge">مميز</span>
+        🌿
+      </div>
       <div class="product-info">
         <h3>أشواغاندا - Gaia Herbs</h3>
-        <div class="price">$42.29</div>
-        <span class="commission">عمولة 5%</span>
+        <div class="price-row">
+          <span class="price">$42.29</span>
+          <span class="commission">عمولة 5%</span>
+        </div>
         <p>مكمل عشبي للتوتر والنوم - 350mg مستخلص جذر</p>
         <a href="https://www.amazon.com/dp/B06XSTTX7C?tag=YOUR_ASSOC_ID" class="btn" data-affiliate="ashwagandha">عرض المنتج</a>
       </div>
     </div>
 
     <div class="product-card">
-      <div class="product-img">🍛</div>
+      <div class="product-img">
+        <span class="badge">تقييم عالي</span>
+        🍛
+      </div>
       <div class="product-info">
         <h3>كركم تركميريك - Gaia Herbs</h3>
-        <div class="price">$29.69</div>
-        <span class="commission">عمولة 5%</span>
+        <div class="price-row">
+          <span class="price">$29.69</span>
+          <span class="commission">عمولة 5%</span>
+        </div>
         <p>مستخلص الكركم القوي مضاد التهاب طبيعي - 616mg</p>
         <a href="https://www.amazon.com/dp/B0036THLWM?tag=YOUR_ASSOC_ID" class="btn" data-affiliate="turmeric">عرض المنتج</a>
       </div>
     </div>
 
     <div class="product-card">
-      <div class="product-img">🦴</div>
+      <div class="product-img">
+        <span class="badge">عضوي</span>
+        🦴
+      </div>
       <div class="product-info">
         <h3>كالسيوم عظمي - New Chapter</h3>
-        <div class="price">$55.97</div>
-        <span class="commission">عمولة 4.5%</span>
-        <p>كالسيوم نباتي من طحالب حمراء - يدعم العظام والقلب</p>
+        <div class="price-row">
+          <span class="price">$55.97</span>
+          <span class="commission">عمولة 4.5%</span>
+        </div>
+        <p>كالسيوم نباتي من طحالب حمراء مع فيتامين K2</p>
         <a href="https://www.amazon.com/dp/B00KTI9Q3U?tag=YOUR_ASSOC_ID" class="btn" data-affiliate="calcium">عرض المنتج</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img">
+        <span class="badge">شائع</span>
+        🦴
+      </div>
+      <div class="product-info">
+        <h3>كولاجين ببتيد - Vital Proteins</h3>
+        <div class="price-row">
+          <span class="price">~$30</span>
+          <span class="commission">عمولة 5%</span>
+        </div>
+        <p>كولاجين ببتيد مهدرج - مصدر بروتين للبشرة والمفاصل</p>
+        <a href="https://www.amazon.com/s?k=hydrolyzed+collagen+peptides&tag=YOUR_ASSOC_ID" class="btn" data-affiliate="collagen">عرض المنتج</a>
       </div>
     </div>
 
@@ -135,7 +198,7 @@
         <h3>New Chapter Every Man's One Daily - هل يستاهل السعر؟</h3>
         <p class="meta">مراجعة كاملة + مقارنة مع المنافسين</p>
         <p>فيتامين متعدد مخمّر طبيعي - مقارنة تفصيلية مع الفوائد والآثار الجانبية المحتملة...</p>
-        <span class="btn">اقرأ المراجعة →</span>
+        <span class="btn btn-sm">اقرأ المراجعة →</span>
       </div>
     </a>
 
@@ -145,7 +208,17 @@
         <h3>زيت السمك أوميغا 3 - دليلك الكامل</h3>
         <p class="meta">مراجعة كاملة + أفضل الأنواع</p>
         <p>أوميغا 3 ضروري للقلب والدماغ - كيف تختار النوع الصح من بين المئات...</p>
-        <span class="btn">اقرأ المراجعة →</span>
+        <span class="btn btn-sm">اقرأ المراجعة →</span>
+      </div>
+    </a>
+
+    <a href="products/ashwagandha.html" class="review-card" style="text-decoration:none; color:inherit;">
+      <div class="review-img">🌿</div>
+      <div class="review-content">
+        <h3>أشواغاندا - هل فعلاً بتخفف التوتر؟</h3>
+        <p class="meta">مراجعة كاملة + تجربة عملية</p>
+        <p>مكمل عشبي تكيفي - أبحاث علمية + تجربة حقيقية بعد أسبوع من الاستخدام...</p>
+        <span class="btn btn-sm">اقرأ المراجعة →</span>
       </div>
     </a>
   </div>
@@ -155,8 +228,8 @@
 <section class="section" id="about">
   <div class="about">
     <h2 class="section-title">من نحن؟</h2>
-    <p style="margin-bottom:1rem;">فريقنا بيقوم على جمع معلومات صحية موثوقة ومراجعة المنتجات بناءً على مكوناتها ودراساتها. هدفنا بسيط: تساعدك تاخذ قرار صحي مدروس.</p>
-    <p style="color:var(--text-light);">نوافد من بيع المنتجات عبر روابط العمولة - السعر على المنتج مش مختلف عن الشراء مباشرة.</p>
+    <p style="text-align:center; margin-bottom:1rem;">فريقنا بيلتقي معلومات صحية موثوقة ويراجعها المنتجات عشان تاخد القرار الصح. هدفنا بسيط: تساعدك تختار صح بدون مخاطرة.</p>
+    <p style="color:var(--text-light); text-align:center;">نوافد من بيع المنتجات عبر روابط العمولة - السعر على المنتج مش مختلف عن الشراء مباشرة من أمازون.</p>
   </div>
 </section>
 
@@ -170,10 +243,15 @@
 </section>
 
 <footer>
-  <p>© 2026 صحتك أولاً | <a href="disclaimer.html">تنويه قانوني</a> | <a href="privacy.html">سياسة الخصوصية</a></p>
-  <p style="margin-top:0.5rem; opacity:0.7;">هذا الموقع مش جزء من Amazon Associates برنامج</p>
+  <ul class="footer-links">
+    <li><a href="disclaimer.html">تنويه قانوني</a></li>
+    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+    <li><a href="index.html#contact">تواصل</a></li>
+  </ul>
+  <p>© 2026 صحتك أولاً | تصميم وبناء مجاني</p>
+  <p style="margin-top:0.5rem; opacity:0.7; font-size:0.8rem;">هذا الموقع مش جزء من Amazon Associates برنامج</p>
 </footer>
 
-<script src="../js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
