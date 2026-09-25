@@ -12,8 +12,8 @@
   --accent-light: #34D399;
   --accent-dark: #059669;
   --warning: #F59E0B;
-  --bg: #F8FAFC;
-  --bg-alt: #F1F5F9;
+  --bg: #F0F4F8;
+  --bg-alt: #E2E8F0;
   --card: #FFFFFF;
   --text: #0F172A;
   --text-light: #64748B;
@@ -189,6 +189,11 @@ header.scrolled {
 .section {
   max-width: 1200px; margin: 0 auto;
   padding: 5rem 1.5rem; position: relative;
+  background: #FFFFFF;
+  border-radius: var(--radius);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .section-title {
   text-align: center; font-size: 2.5rem;
@@ -528,3 +533,29 @@ footer p { margin-bottom: 0.3rem; }
   border-radius: var(--radius); box-shadow: var(--shadow);
 }
 .product-detail .details p { margin-bottom: 0.8rem; color: var(--text-light); line-height: 1.8; }
+/* ALTERNATING SECTION BACKGROUNDS */
+.section.alt {
+  background: #F0F4F8;
+  box-shadow: none;
+}
+.section.highlight {
+  background: linear-gradient(135deg, #EEF2FF, #E0E7FF);
+}
+
+/* BODY BACKGROUND */
+body {
+  background: #F0F4F8;
+}
+
+/* PAGE WRAPPER */
+.page-wrapper {
+  background: #FFFFFF;
+  min-height: 100vh;
+}
+
+/* SEPARATOR LINE */
+.section-separator {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #E2E8F0, transparent);
+  margin: 2rem 0;
+}
