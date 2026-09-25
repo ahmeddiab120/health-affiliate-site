@@ -221,14 +221,22 @@ header.scrolled {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2.5rem;
+  background: transparent;
+}
+.section[data-section="features"] {
+  background: #F8FAFC;
+  padding: 3rem 0;
+  border-radius: var(--radius);
 }
 .feature-card {
-  background: var(--card); padding: 3rem 2.5rem;
+  background: #FFFFFF; /* fallback */
+  background: var(--card);
+  padding: 3rem 2.5rem;
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   text-align: center;
   transition: all 0.4s ease;
-  border: 1px solid var(--border);
+  border: 2px solid #E2E8F0;
   position: relative; overflow: hidden;
 }
 .feature-card::before {
