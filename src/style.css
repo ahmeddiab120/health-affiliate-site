@@ -416,24 +416,26 @@ html { scroll-behavior: smooth; }
 /* SELECTION */
 ::selection { background: rgba(34,197,94,0.3); color: #22c55e; }
 
-/* ===== Custom Components Layer ===== */
-@layer components {
-  .feature-card {
-    padding: 2rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .feature-icon {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .stat-card {
-    padding: 2rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+/* ===== Custom Components (Force Override) ===== */
+.feature-card {
+  padding: 2rem !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+.feature-icon {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.stat-card {
+  padding: 2rem !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+.feature-card .feature-icon {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
