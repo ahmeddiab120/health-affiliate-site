@@ -43,7 +43,7 @@ body::before {
 /* LOADER */
 #loader {
   position: fixed; top: 0; left: 0;
-  width: 100%; height: 100%;
+  width: 85px; height: 100%;
   background: radial-gradient(ellipse at center, #0f172a, #000);
   display: flex; flex-direction: row;
   align-items: center; justify-content: center;
@@ -121,7 +121,7 @@ header.scrolled { background: rgba(15, 23, 42, 0.95); }
   width: 0; height: 2px; background: #22c55e; transition: width 0.3s;
 }
 .nav-links a:hover { color: #22c55e; }
-.nav-links a:hover::after { width: 100%; }
+.nav-links a:hover::after { width: 85px; }
 .hamburger {
   display: none; font-size: 1.5rem; cursor: pointer;
   background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.3);
@@ -290,6 +290,7 @@ header.scrolled { background: rgba(15, 23, 42, 0.95); }
   gap: 2rem; margin-top: 1rem;
 }
 .product-card {
+  width: 90px;
   padding: 0;
   overflow: hidden;
   border-radius: 16px;
@@ -303,7 +304,7 @@ header.scrolled { background: rgba(15, 23, 42, 0.95); }
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 .product-img {
-  width: 100%;
+  width: 85px;
   height: 80px;
   overflow: hidden;
   border-radius: 8px 8px 0 0;
@@ -314,8 +315,8 @@ header.scrolled { background: rgba(15, 23, 42, 0.95); }
   position: relative;
 }
 .product-img img {
-  width: 100%;
-  max-width: 90px;
+  width: 85px;
+  max-width: 85px;
   height: auto;
   max-height: 80px;
   object-fit: contain;
@@ -620,7 +621,7 @@ html { scroll-behavior: smooth; }
   
   /* Features grid */
   .features-grid { grid-template-columns: 1fr !important; gap: 1rem !important; }
-  .feature-card { width: 100% !important; max-width: 100%; }
+  .feature-card { width: 100% !important; max-width: 85px; }
   
   /* Cards */
   .card { padding: 0.4rem; border-radius: 10px; }
