@@ -226,14 +226,13 @@ header.scrolled { background: rgba(15, 23, 42, 0.95); }
 /* FEATURES */
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   justify-items: center;
   place-items: center;
 }
-.features-grid .feature-card:first-child {
-  grid-column: span 2;
-  min-width: 400px;
+.features-grid .feature-card {
+  min-width: 300px;
 }
 
 .feature-icon {
@@ -253,9 +252,6 @@ header.scrolled { background: rgba(15, 23, 42, 0.95); }
   gap: 1.5rem; margin-top: 1rem;
   justify-items: center;
   place-items: center;
-}
-.stats-grid .stat-card:first-child {
-  min-width: 260px;
 }
 .stat { padding: 2rem; background: rgba(15,23,42,0.8); backdrop-filter: blur(10px); }
 .stat-num {
