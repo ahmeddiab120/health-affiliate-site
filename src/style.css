@@ -397,6 +397,7 @@ header.scrolled { background: rgba(15, 23, 42, 0.95); }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem; margin-top: 1rem;
+  place-items: center !important;
 }
 .review-card { overflow: hidden; padding: 0; text-decoration: none; color: inherit; }
 .review-content { padding: 0.3rem; }
