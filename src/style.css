@@ -633,4 +633,12 @@ html { scroll-behavior: smooth; }
   .social-row { gap: 1rem; }
   .social-btn { width: 42px; height: 42px; }
   .social-btn svg { width: 20px; height: 20px; }
+}.social-btn.x {
+  background: rgba(0, 0, 0, 0.4) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
 }
+.social-btn.x:hover {
+  background: rgba(0, 0, 0, 0.6) !important;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+}
+.social-btn.x svg path { fill: #FFFFFF !important; }
