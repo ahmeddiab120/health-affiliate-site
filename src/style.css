@@ -226,10 +226,14 @@ header.scrolled { background: rgba(15, 23, 42, 0.95); }
 /* FEATURES */
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   justify-items: center;
   place-items: center;
+}
+.features-grid .feature-card:first-child {
+  grid-column: span 2;
+  min-width: 400px;
 }
 
 .feature-icon {
@@ -245,10 +249,13 @@ header.scrolled { background: rgba(15, 23, 42, 0.95); }
 /* STATS */
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem; margin-top: 1rem;
   justify-items: center;
   place-items: center;
+}
+.stats-grid .stat-card:first-child {
+  min-width: 260px;
 }
 .stat { padding: 2rem; background: rgba(15,23,42,0.8); backdrop-filter: blur(10px); }
 .stat-num {
