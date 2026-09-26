@@ -713,12 +713,13 @@ html { scroll-behavior: smooth; }
   .social-icon svg { width: 22px; height: 22px; }
 }
 /* TikTok icon needs dark background for visibility */
-.social-icon[title="تيك توك"] {
+/* TikTok icon needs dark background for visibility */
+.social-icon[title="tiktok"] {
   background: rgba(0, 0, 0, 0.3);
   border-color: rgba(255, 255, 255, 0.15);
 }
-.social-icon[title="تيك توك"]:hover {
+.social-icon[title="tiktok"]:hover {
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
 }
-.social-icon[title="تيك توك"] svg path { fill: #000000 !important; }
+.social-icon[title="tiktok"] svg path { fill: #000000 !important; }
