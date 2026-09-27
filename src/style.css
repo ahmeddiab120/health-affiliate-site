@@ -306,7 +306,7 @@ header.scrolled { background: rgba(15, 23, 42, 0.95); }
 }
 .product-img {
   width: 100%;
-  height: 180px;
+  height: 160px;
   overflow: hidden;
   border-radius: 16px 16px 0 0;
   background: rgba(34, 197, 94, 0.05);
@@ -316,9 +316,9 @@ header.scrolled { background: rgba(15, 23, 42, 0.95); }
 }
 .product-img img {
   width: 100%;
-  max-width: 160px;
+  max-width: 140px;
   height: auto;
-  max-height: 160px;
+  max-height: 140px;
   object-fit: contain;
   border-radius: 16px 16px 0 0;
 }
@@ -405,12 +405,53 @@ header.scrolled { background: rgba(15, 23, 42, 0.95); }
 }
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem; margin-top: 1rem;
   place-items: center !important;
 }
-.review-card { overflow: hidden; padding: 0; text-decoration: none; color: inherit; }
-.review-content { padding: 0.3rem; }
+.review-card {
+  overflow: hidden;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 16px;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+.review-card:hover {
+  border-color: rgba(34, 197, 94, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(34, 197, 94, 0.1);
+}
+.review-img {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+  background: rgba(34, 197, 94, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.review-img img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  max-height: 160px;
+  object-fit: contain;
+  border-radius: 16px 16px 0 0;
+}
+.review-content {
+  padding: 1.25rem;
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 0 0 16px 16px;
+}
 .review-content .stars { color: #fbbf24; font-size: 0.78rem; margin-bottom: 0.3rem; }
 .review-content .rating { color: #fbbf24; font-weight: 700; margin-bottom: 0.5rem; }
 .review-content h3 { color: #e2e8f0; font-size: 0.95rem; margin-bottom: 0.3rem; }
