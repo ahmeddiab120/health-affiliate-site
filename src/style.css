@@ -288,6 +288,7 @@ header.scrolled { background: rgba(15, 23, 42, 0.95); }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem; margin-top: 1rem;
+  place-items: center !important;
 }
 .product-card {
   width: 260px;
