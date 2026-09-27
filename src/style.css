@@ -343,35 +343,41 @@ header.scrolled { background: rgba(15, 23, 42, 0.95); }
   border-radius: 0 0 16px 16px;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 .product-info::before {
   content: '';
-  position: absolute; top: 0; left: 0; right: 0; height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(34,197,94,0.3), transparent);
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(34,197,94,0.5), rgba(34,197,94,0.3), transparent);
 }
 .product-name {
-  font-size: 1rem; font-weight: 700; color: #e2e8f0; margin: 0; line-height: 1.4;
+  font-size: 1.05rem; font-weight: 700; color: #e2e8f0; margin: 0; line-height: 1.4;
+  text-align: center;
 }
 .product-price-row {
   display: flex; align-items: center; justify-content: center;
+  padding: 0.4rem 0;
   font-size: 1.3rem; font-weight: 800; color: #22c55e; margin: 0;
+  border-bottom: 1px solid rgba(34,197,94,0.15);
 }
 .product-price {
   font-size: 1.3rem; font-weight: 800; color: #22c55e;
+  text-align: center;
 }
 .product-desc {
   color: #94a3b8; font-size: 0.82rem; margin: 0; line-height: 1.6;
+  text-align: center;
 }
 .product-btn {
   display: inline-block;
   background: linear-gradient(135deg, #15803d, #22c55e);
-  color: white; padding: 0.6rem 1.5rem;
+  color: white; padding: 0.65rem 1.8rem;
   border-radius: 50px; text-decoration: none;
   font-weight: 700; font-size: 0.85rem;
   transition: all 0.3s ease; border: none; cursor: pointer;
   box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
-  margin-top: 0.3rem; text-align: center;
+  margin-top: 0.5rem; text-align: center;
+  align-self: center;
 }
 .product-btn:hover {
   transform: translateY(-2px);
