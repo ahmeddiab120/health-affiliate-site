@@ -1,75 +1,83 @@
-/* ═══════════════════════════════════════════
-   صحتك أولاً - JavaScript
-   ═══════════════════════════════════════════ */
-
+/* ═══════════════════════════════════════════════
+   صحتك أولاً — Site interactions
+   ═══════════════════════════════════════════════ */
 document.addEventListener('DOMContentLoaded', () => {
-  // Hide loader
+
+  // Loader
   const loader = document.getElementById('loader');
   if (loader) {
-    setTimeout(() => {
-      if (loader) {
-        loader.classList.add('fade-out');
-        setTimeout(() => { if (loader) loader.style.display = 'none'; }, 500);
-      }
-    }, 800);
+    const hide = () => {
+      loader.classList.add('fade-out');
+      setTimeout(() => loader.remove(), 600);
+    };
+    if (document.readyState === 'complete') setTimeout(hide, 400);
+    else window.addEventListener('load', () => setTimeout(hide, 400));
+    setTimeout(hide, 2600); // safety net
   }
 
-  // Scroll to top button
+  // Scroll-to-top button
   const scrollTop = document.getElementById('scrollTop');
   if (scrollTop) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        scrollTop.classList.add('visible');
-      } else {
-        scrollTop.classList.remove('visible');
-      }
-    });
+    const onScroll = () => {
+      scrollTop.classList.toggle('visible', window.scrollY > 350);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
     scrollTop.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 
-  // Header scroll effect
+  // Header background on scroll
   const header = document.getElementById('header');
   if (header) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
+    const onScroll = () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
   }
 
   // Mobile menu
   const hamburger = document.getElementById('hamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  if (hamburger && mobileMenu) {
+  const navLinks = document.getElementById('navLinks');
+  if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+      const open = navLinks.classList.toggle('active');
+      hamburger.textContent = open ? '✕' : '☰';
+      hamburger.setAttribute('aria-expanded', open);
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.textContent = '☰';
+      });
     });
   }
 
-  // SCROLL ANIMATIONS - Pure CSS
-  const animatedElements = document.querySelectorAll('.animate-on-scroll');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, index) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
+  // Reveal-on-scroll animations
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-        }, index * 150);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => observer.observe(el));
+  }
 
-  animatedElements.forEach(el => observer.observe(el));
-
-  // Track affiliate clicks
+  // Affiliate click logging (analytics hook)
   document.querySelectorAll('[data-affiliate]').forEach(link => {
     link.addEventListener('click', () => {
-      const product = link.dataset.affiliate;
-      console.log('Affiliate click:', product);
+      console.info('[affiliate click]', link.dataset.affiliate);
     });
+  });
+
+  // Dynamic footer year
+  document.querySelectorAll('[data-year]').forEach(el => {
+    el.textContent = new Date().getFullYear();
   });
 });

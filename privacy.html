@@ -4,22 +4,75 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>سياسة الخصوصية | صحتك أولاً</title>
+<meta name="description" content="سياسة الخصوصية لموقع صحتك أولاً: لا نجمع بيانات شخصية، لا كوكيز، لا تتبع للمستخدمين.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d7a3f'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle'%3E💚%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<style>
-  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 2rem; }
-  .legal-page { max-width: 800px; background: white; padding: 3rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-  h1 { color: #1e8449; margin-bottom: 1.5rem; }
-  p { margin-bottom: 1rem; color: #6c757d; line-height: 1.8; }
-</style>
 </head>
 <body>
-<div class="legal-page">
-  <h1>🔒 سياسة الخصوصية</h1>
-  <p>نحن لا نجمع أو نخزن أي بيانات شخصية من زوار موقعنا.</p>
-  <p>جميع المعلومات على هذا الموقع هي معلومات عامة مستخرجة من iHerb.com.</p>
-  <p>لا نستخدم ملفات تعريف الارتباط (Cookies) ولا نتبع المستخدمين.</p>
-  <p>هذا الموقع مرتبط ببرنامج iHerb Affiliate Program.</p>
-  <p style="margin-top:2rem;"><a href="index.html">← العودة للرئيسية</a></p>
+
+<div id="loader" aria-hidden="true">
+  <div class="loader-icon">💚</div>
+  <p class="loader-text">صحتك <span>أولاً</span></p>
+  <div class="loader-bar"></div>
 </div>
+
+<button id="scrollTop" aria-label="العودة للأعلى">↑</button>
+
+<header id="header">
+  <nav class="nav">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">💚</span>
+      صحتك <b>أولاً</b>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="index.html#products">المنتجات</a></li>
+      <li><a href="index.html#reviews">المراجعات</a></li>
+      <li><a href="index.html#about">من نحن</a></li>
+      <li><a href="index.html#contact" class="nav-cta">تواصل معنا</a></li>
+    </ul>
+    <button id="hamburger" class="hamburger" aria-label="القائمة" aria-expanded="false">☰</button>
+  </nav>
+</header>
+
+<main class="legal-wrap">
+  <div class="legal-card">
+    <h1>🔒 سياسة الخصوصية</h1>
+
+    <h2>عدم جمع البيانات الشخصية</h2>
+    <p>نحن لا نجمع أو نخزن أي بيانات شخصية من زوار موقعنا — لا أسماء ولا بريد إلكتروني ولا أرقام هواتف. يمكنك تصفح الموقع بشكل كامل دون تقديم أي معلومات عن نفسك.</p>
+
+    <h2>ملفات تعريف الارتباط (Cookies)</h2>
+    <p>لا نستخدم ملفات تعريف الارتباط على موقعنا، ولا نستخدم أي أدوات تتبع للمستخدمين أو تحليلات سلوكية.</p>
+
+    <h2>مصادر المعلومات</h2>
+    <p>جميع المعلومات عن المنتجات على هذا الموقع هي معلومات عامة مستخرجة من iHerb.com وتُعرض لغرض التوعية فقط. عند النقر على روابط الشراء سيتم تحويلك إلى موقع iHerb وستخضع هناك لسياسة خصوصية iHerb وشروط استخدامه.</p>
+
+    <h2>برنامج الأفلييت</h2>
+    <p>هذا الموقع مرتبط ببرنامج iHerb Affiliate Program. عند الشراء من خلال روابطنا، قد نحصل على عمولة دون أي تكلفة إضافية عليك.</p>
+
+    <a href="index.html" class="back-link">→ الرجوع للرئيسية</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-icon">💚</span>
+      صحتك <b>أولاً</b>
+    </div>
+    <ul class="footer-links">
+      <li><a href="disclaimer.html">تنويه قانوني</a></li>
+      <li><a href="privacy.html">سياسة الخصوصية</a></li>
+      <li><a href="index.html#contact">تواصل معنا</a></li>
+    </ul>
+    <p class="footer-copy">© <span data-year>2026</span> صحتك أولاً · iHerb Affiliate ID: <b>7846431</b></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

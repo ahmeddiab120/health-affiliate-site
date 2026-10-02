@@ -3,439 +3,387 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>صحتك أولاً | مراجعات صادقة لأفضل مكملات صحية من iHerb</title>
-<meta name="description" content="مراجعات صادقة لمنتجات iHerb الصحية - فيتامينات، مكملات غذائية، وزيوت أوميغا. شحن لمصر والسعودية.  على كل طلب.">
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-<!-- Dark Glassmorphism CSS (Tailwind CLI built) -->
+<title>صحتك أولاً | مراجعات صادقة لأفضل مكملات iHerb</title>
+<meta name="description" content="مراجعات صادقة لأفضل منتجات iHerb — فيتامينات، مكملات غذائية، وزيوت أوميغا. شحن لمصر والسعودية بضمان الأصالة.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d7a3f'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle'%3E💚%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-
-  <!-- Custom CSS Overrides -->
-        <style>
-    .features-grid { justify-items: center !important; place-items: center !important; gap: 2rem !important; }
-    .stats-grid { justify-items: center !important; place-items: center !important; gap: 1.5rem !important; }
-    .feature-card { text-align: center !important; display: flex !important; flex-direction: column !important; align-items: center !important; position: relative !important; overflow: hidden !important; }
-    .feature-icon { width: 64px !important; height: 64px !important; border-radius: 16px !important; background: linear-gradient(135deg, rgba(34,197,94,0.15), rgba(34,197,94,0.05)) !important; border: 1px solid rgba(34,197,94,0.25) !important; display: flex !important; align-items: center !important; justify-content: center !important; font-size: 1.8rem !important; margin-bottom: 1.2rem !important; color: #4ade80 !important; transition: all .4s ease !important; box-shadow: 0 4px 15px rgba(34,197,94,0.1) !important; margin-left: auto !important; margin-right: auto !important; }
-    .feature-card:hover .feature-icon { transform: scale(1.15) rotate(-5deg) !important; box-shadow: 0 8px 30px rgba(34,197,94,0.3) !important; background: linear-gradient(135deg, rgba(34,197,94,0.3), rgba(34,197,94,0.1)) !important; }
-    .feature-card h3 { color: #e2e8f0 !important; font-size: 1.15rem !important; margin-bottom: 0.5rem !important; font-weight: 700 !important; transition: color .3s ease !important; }
-    .feature-card:hover h3 { color: #4ade80 !important; }
-    .feature-card p { color: #94a3b8 !important; font-size: 0.9rem !important; line-height: 1.8 !important; }
-    .feature-card::before { content: '' !important; position: absolute !important; top: 0 !important; left: 0 !important; right: 0 !important; height: 3px !important; background: linear-gradient(90deg, transparent, #22c55e, transparent) !important; opacity: 0 !important; transition: opacity .3s ease !important; }
-    .feature-card:hover::before { opacity: 1 !important; }
-    .stat-card { width: 300px !important; text-align: center !important; display: flex !important; flex-direction: column !important; align-items: center !important; }
-    /* Product image dark backgrounds */
-      /* TikTok icon dark background */
-    .social-icon[title="tiktok"] { background: rgba(0, 0, 0, 0.3) !important; border-color: rgba(255, 255, 255, 0.15) !important; }
-    .social-icon[title="tiktok"]:hover { background: rgba(0, 0, 0, 0.5) !important; box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3) !important; }
-    .social-icon[title="tiktok"] svg path { fill: #FFFFFF !important; }
-    /* Social Media Bar - Force Center */
-    .social-bar {
-      display: flex; align-items: center; justify-content: center; gap: 2rem;
-      padding: 1.5rem 2rem; background: rgba(15, 23, 42, 0.5);
-      backdrop-filter: blur(20px); border: 1px solid rgba(34, 197, 94, 0.15);
-      border-radius: 16px; margin: 2rem auto; max-width: 800px;
-      width: fit-content; flex-wrap: wrap;
-    }
-    .social-icons {
-      display: flex; align-items: center; justify-content: center;
-      gap: 1.5rem; flex-wrap: wrap;
-    }
-    .social-icon {
-      display: flex; align-items: center; justify-content: center;
-      width: 50px; height: 50px; border-radius: 12px;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      transition: all 0.3s ease; text-decoration: none;
-    }
-    .social-icon:hover {
-      transform: translateY(-3px) scale(1.05);
-      border-color: rgba(34, 197, 94, 0.5);
-      box-shadow: 0 6px 25px rgba(34, 197, 94, 0.25);
-      background: rgba(255, 255, 255, 0.12);
-    }
-    .social-icon svg { width: 28px; height: 28px; }
-    .social-icon[title="X"] {
-      background: rgba(0, 0, 0, 0.3);
-      border-color: rgba(255, 255, 255, 0.15);
-    }
-    .social-icon[title="X"]:hover {
-      background: rgba(0, 0, 0, 0.5);
-      box-shadow: 0 6px 25px rgba(255, 255, 255, 0.15);
-    }
-    .social-icon[title="tiktok"] svg path { fill: #FFFFFF !important; }
-    .social-icon[title="tiktok"] {
-      background: rgba(0, 0, 0, 0.3);
-      border-color: rgba(255, 255, 255, 0.15);
-    }
-    .social-icon[title="tiktok"]:hover {
-      background: rgba(0, 0, 0, 0.5);
-      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
-    }
-  </style>
-
-
-
-
+</head>
 <body>
 
-<!-- LOADING SCREEN -->
-<div id="loader">
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
   <div class="loader-icon">💚</div>
-  <p style="color:#e2e8f0;font-size:1.2rem;font-weight:700;margin-top:1rem">صحتك أولاً</p>
+  <p class="loader-text">صحتك <span>أولاً</span></p>
   <div class="loader-bar"></div>
 </div>
 
 <!-- SCROLL TO TOP -->
-<button id="scrollTop">↑</button>
+<button id="scrollTop" aria-label="العودة للأعلى">↑</button>
 
 <!-- HEADER -->
-<header>
+<header id="header">
   <nav class="nav">
     <a href="index.html" class="logo">
-      <div class="logo-icon">💚</div>
-      <span class="logo-name">صحتك <span>أولاً</span></span></div>
+      <span class="logo-icon">💚</span>
+      صحتك <b>أولاً</b>
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="index.html" class="active">الرئيسية</a></li>
       <li><a href="#products">المنتجات</a></li>
       <li><a href="#reviews">المراجعات</a></li>
       <li><a href="#about">من نحن</a></li>
-      <li><a href="#contact" style="background:linear-gradient(135deg,#15803d,#22c55e);color:white;padding:0.5rem 1.2rem;border-radius:50px;font-weight:700;text-decoration:none;font-size:0.85rem;box-shadow:0 4px 15px rgba(34,197,94,0.3)">تواصل</a></li>
+      <li><a href="#contact" class="nav-cta">تواصل معنا</a></li>
     </ul>
-    <button id="hamburger" class="hamburger">☰</button>
+    <button id="hamburger" class="hamburger" aria-label="القائمة" aria-expanded="false">☰</button>
   </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg"></div>
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="hero-content">
-    <span class="hero-badge">دليلك لمنتجات iHerb 🌿</span></div>
-    <h1>صحتك <span class="gradient-text">أولاً</span></h1>
-    <p>مراجعات صادقة لأفضل منتجات iHerb — فيتامينات، مكملات غذائية، وزيوت أوميغا. شحن لمصر والسعودية بضمان الأصالة.</p>
-    <a href="#products" class="btn">شوف المنتجات ←</a>
+  <div class="hero-copy">
+    <span class="hero-badge">🌿 دليلك الموثوق لمنتجات iHerb</span>
+    <h1>صحتك تستحق <span class="gradient-text">أفضل المكملات</span> بدون تخمين</h1>
+    <p>مراجعات صادقة ومبنية على الأبحاث لأفضل منتجات iHerb — فيتامينات، مكملات غذائية، وزيوت أوميغا. نختار لك الأفضل، وأنت تشتري بأفضل سعر مباشر من iHerb.</p>
+    <div class="hero-actions">
+      <a href="#products" class="btn">تصفح المنتجات ←</a>
+      <a href="#reviews" class="btn btn-ghost">اقرأ المراجعات</a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-item"><span class="tick">✓</span> أسعار مباشرة من iHerb</div>
+      <div class="trust-item"><span class="tick">✓</span> شحن لمصر والسعودية</div>
+      <div class="trust-item"><span class="tick">✓</span> اختيار مبني على الأبحاث</div>
+    </div>
+  </div>
+  <div class="hero-media">
+    <div class="frame">
+      <img src="images/hero.jpg" alt="مكملات غذائية مُختارة بعناية من iHerb" width="1400" height="933">
+    </div>
+    <div class="float-chip chip-1">
+      <span class="ic">⭐</span>
+      <div>تقييم 4.7 من 5<small>بناءً على آلاف تقييمات المشترين</small></div>
+    </div>
+    <div class="float-chip chip-2">
+      <span class="ic">🚚</span>
+      <div>شحن لأكثر من 180 دولة<small>توصيل سريع حتى باب البيت</small></div>
+    </div>
   </div>
 </section>
 
 <!-- STATS -->
-<section class="section">
-  <div class="section-header">
-    <span class="section-badge">إحصائيات</span></div>
-    <h3 class="section-title">لماذا صحتك أولاً؟</h3>
-    <p class="section-sub">منهجيتنا في اختيار المنتجات</p>
+<section class="section" id="why">
+  <div class="section-head reveal">
+    <span class="section-badge">لماذا نحن</span>
+    <h2 class="section-title">أرقام تتكلم عنا</h2>
+    <p class="section-sub">منهجية واضحة ومراجعات صادقة — هذا ما يميزنا</p>
   </div>
-  <div class="stats-grid text-center">
-    <div class="stat card text-center">
-      <div class="stat-num">6</div>
-      <div class="stat-label">منتج مُراجع</div>
+  <div class="stats-grid">
+    <div class="stat reveal" style="--reveal-delay:0ms">
+      <div class="stat-num">7+</div>
+      <div class="stat-label">منتج مُراجع بعمق</div>
     </div>
-    <div class="stat card text-center">
-      <div class="stat-num" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent">180+</div>
-      <div class="stat-label">دولة شحن عالمي</div>
+    <div class="stat reveal" style="--reveal-delay:120ms">
+      <div class="stat-num alt">180+</div>
+      <div class="stat-label">دولة يشحن إليها iHerb</div>
     </div>
-        <div class="stat card text-center">
-      <div class="stat-num" style="background:linear-gradient(135deg,#10b981,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent">⚡</div>
-      <div class="stat-label">توصيل سريع</div>
+    <div class="stat reveal" style="--reveal-delay:240ms">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">مراجعات صادقة بدون تحيز</div>
     </div>
   </div>
 </section>
 
 <!-- FEATURES -->
-<section id="features" class="section">
-  <div class="section-header">
-    <span class="section-badge">لماذا نثق</span></div>
-    <h3 class="section-title">منهجية اختيار المنتجات</h3>
-    <p class="section-sub">كل منتج نرشحه مبني على أبحاث علمية موثقة</p>
+<section class="section" id="features">
+  <div class="section-head reveal">
+    <span class="section-badge">منهجيتنا</span>
+    <h2 class="section-title">كيف نختار المنتجات؟</h2>
+    <p class="section-sub">كل منتج نرشحه يمر بمراحل فحص دقيقة قبل أن يصل إليك</p>
   </div>
-  <div class="features-grid text-center">
-    <div class="card feature-card text-center">
+  <div class="features-grid">
+    <div class="feature-card reveal" style="--reveal-delay:0ms">
       <div class="feature-icon">🧪</div>
-      <h3>أبحاث علمية</h3>
-      <p>كل منتج نرشحه مبني على دراسات سريرية موثقة ومعتمدة من الجهات الصحية</p>
+      <h3>أبحاث علمية موثقة</h3>
+      <p>كل ترشيح مبني على دراسات سريرية منشورة وتقييمات حقيقية من المشترين، وليس على الإعلانات.</p>
     </div>
-    <div class="card feature-card text-center">
+    <div class="feature-card reveal" style="--reveal-delay:120ms">
       <div class="feature-icon">💎</div>
-      <h3>أفضل سعر</h3>
-      <p>نقارن الأسعار لأن تحصل على أفضل سعر — سعر المنتج على موقعنا يساوي السعر المباشر من iHerb.</p>
+      <h3>أفضل سعر مضمون</h3>
+      <p>السعر عندنا هو نفس سعر iHerb المباشر — بدون أي زيادة. أنت تدفع للمنتج فقط، لا أكثر.</p>
     </div>
-    <div class="card feature-card text-center">
+    <div class="feature-card reveal" style="--reveal-delay:240ms">
       <div class="feature-icon">🔒</div>
       <h3>شفافية كاملة</h3>
-      <p>نوضّح لك مصدرينا بوضوح — بدون مفاجآت. كل ما تحتاج معرفته عن المنتجات نعرفه لك.</p>
+      <p>نوضح مصادرنا ومعاييرنا بشكل علني، ونذكر عيوب كل منتج بصراحة — المميزات والسلبيات معاً.</p>
     </div>
   </div>
 </section>
 
 <!-- PRODUCTS -->
-<section id="products" class="section">
-  <div class="section-header">
-    <span class="section-badge">المنتجات</span></div>
-    <h3 class="section-title">منتجات iHerb مُرشحة</h3>
-    <p class="section-sub">أكثر 6 منتجات صحة مبيعاً — مع مراجعاتنا</p>
+<section class="section" id="products">
+  <div class="section-head reveal">
+    <span class="section-badge">المنتجات</span>
+    <h2 class="section-title">منتجات iHerb المُرشحة</h2>
+    <p class="section-sub">أكثر المكملات مبيعاً وجودة — مختارة بعناية مع مراجعاتنا الكاملة</p>
   </div>
   <div class="products-grid">
 
-    <!-- Collagen -->
-    <div class="card product-card">
-      <div class="product-img">
+    <article class="product-card reveal" style="--reveal-delay:0ms">
+      <div class="product-media">
         <span class="badge">الأكثر مبيعاً</span>
-        <img src="https://cloudinary.images-iherb.com/image/upload/w_400/f_auto,q_auto:eco/images/cgn/cgn01033/l/478.jpg" alt="CollagenUP">
+        <img src="https://cloudinary.images-iherb.com/image/upload/w_400/f_auto,q_auto:eco/images/cgn/cgn01033/l/478.jpg" alt="CollagenUP Peptides" loading="lazy">
       </div>
-      <div class="product-info">
-        <div class="product-name">CollagenUP Peptides</div>
-        <div class="product-price-row">
-          <span class="product-price">$17.46</span>
-          </div>
-        <p class="product-desc">كولاجين ببتيد مهدرج - للبشرة والشعر والمفاصل</p>
-        <a href="https://www.iherb.com/pr/California-Gold-Nutrition-Collagen-UP-5000-Marine-Sourced-Collagen-Peptides-Hyaluronic-Acid-Vitamin-C-7-23-oz-205-g/64903?ap=7846431" class="product-btn">عرض المنتج ←</a>
+      <div class="product-body">
+        <h3 class="product-name">CollagenUP Peptides</h3>
+        <div class="product-price">$17.46 <small>على iHerb</small></div>
+        <p class="product-desc">كولاجين ببتيد مهدرج من مصدر بحري — للبشرة والشعر والمفاصل.</p>
+        <a href="https://www.iherb.com/pr/California-Gold-Nutrition-Collagen-UP-5000-Marine-Sourced-Collagen-Peptides-Hyaluronic-Acid-Vitamin-C-7-23-oz-205-g/64903?ap=7846431" class="btn product-btn" data-affiliate="collagen" target="_blank" rel="noopener sponsored">عرض المنتج على iHerb ←</a>
       </div>
-    </div>
+    </article>
 
-    <!-- Omega-3 -->
-    <div class="card product-card">
-      <div class="product-img">
-        <span class="badge">🔥 جديد</span></div>
-        <img src="https://cloudinary.images-iherb.com/image/upload/w_400/f_auto,q_auto:eco/images/now/now01650/l/58.jpg" alt="Omega-3">
+    <article class="product-card reveal" style="--reveal-delay:100ms">
+      <div class="product-media">
+        <span class="badge hot">🔥 جديد</span>
+        <img src="https://cloudinary.images-iherb.com/image/upload/w_400/f_auto,q_auto:eco/images/now/now01650/l/58.jpg" alt="Omega-3 Fish Oil" loading="lazy">
       </div>
-      <div class="product-info">
-        <div class="product-name">Omega-3 Fish Oil</div>
-        <div class="product-price-row">
-          <span class="product-price">$9.47</span>
-          </div>
-        <p class="product-desc">زيت سمك أوميغا 3 - قلب + دماغ + مفاصل</p>
-        <a href="https://www.iherb.com/pr/now-foods-omega-3-fish-oil-1-000-mg-180-epa-120-dha-100-softgels/102333?ap=7846431" class="product-btn">عرض المنتج ←</a>
+      <div class="product-body">
+        <h3 class="product-name">Omega-3 Fish Oil</h3>
+        <div class="product-price">$9.47 <small>على iHerb</small></div>
+        <p class="product-desc">زيت سمك أوميغا 3 — لصحة القلب والدماغ والمفاصل.</p>
+        <a href="https://www.iherb.com/pr/now-foods-omega-3-fish-oil-1-000-mg-180-epa-120-dha-100-softgels/102333?ap=7846431" class="btn product-btn" data-affiliate="omega3" target="_blank" rel="noopener sponsored">عرض المنتج على iHerb ←</a>
       </div>
-    </div>
+    </article>
 
-    <!-- Vit D3+K2 -->
-    <div class="card product-card">
-      <div class="product-img">
+    <article class="product-card reveal" style="--reveal-delay:200ms">
+      <div class="product-media">
         <span class="badge">مميز</span>
-        <img src="https://cloudinary.images-iherb.com/image/upload/w_400/f_auto,q_auto:eco/images/now/now00372/l/88.jpg" alt="Vitamin D3+K2">
+        <img src="https://cloudinary.images-iherb.com/image/upload/w_400/f_auto,q_auto:eco/images/now/now00372/l/88.jpg" alt="Vitamin D3+K2" loading="lazy">
       </div>
-      <div class="product-info">
-        <div class="product-name">Vitamin D3+K2</div>
-        <div class="product-price-row">
-          <span class="product-price">$9.17</span>
-          </div>
-        <p class="product-desc">فيتامين D3 مع K2 - امتصاص أفضل للعظام</p>
-        <a href="https://www.iherb.com/pr/now-foods-vitamin-d3-k2-120-capsules/10056?ap=7846431" class="product-btn">عرض المنتج ←</a>
+      <div class="product-body">
+        <h3 class="product-name">Vitamin D3 + K2</h3>
+        <div class="product-price">$9.17 <small>على iHerb</small></div>
+        <p class="product-desc">فيتامين D3 مع K2 — امتصاص أفضل ودعم أقوى للعظام.</p>
+        <a href="https://www.iherb.com/pr/now-foods-vitamin-d3-k2-120-capsules/10056?ap=7846431" class="btn product-btn" data-affiliate="vitd3k2" target="_blank" rel="noopener sponsored">عرض المنتج على iHerb ←</a>
       </div>
-    </div>
+    </article>
 
-    <!-- Magnesium -->
-    <div class="card product-card">
-      <div class="product-img">
+    <article class="product-card reveal" style="--reveal-delay:0ms">
+      <div class="product-media">
         <span class="badge">تقييم عالي</span>
-        <img src="https://cloudinary.images-iherb.com/image/upload/w_400/f_auto,q_auto:eco/images/now/now01289/l/62.jpg" alt="Magnesium">
+        <img src="https://cloudinary.images-iherb.com/image/upload/w_400/f_auto,q_auto:eco/images/now/now01289/l/62.jpg" alt="Magnesium Glycinate" loading="lazy">
       </div>
-      <div class="product-info">
-        <div class="product-name">Magnesium Glycinate</div>
-        <div class="product-price-row">
-          <span class="product-price">$10.88</span>
-          </div>
-        <p class="product-desc">مغنيسيوم جلايسينات - استرخاء + نوم أفضل</p>
-        <a href="https://www.iherb.com/pr/now-foods-magnesium-glycinate-180-tablets-100-mg-per-tablet/88819?ap=7846431" class="product-btn">عرض المنتج ←</a>
+      <div class="product-body">
+        <h3 class="product-name">Magnesium Glycinate</h3>
+        <div class="product-price">$10.88 <small>على iHerb</small></div>
+        <p class="product-desc">مغنيسيوم جلايسينات — استرخاء أعمق ونوم أفضل.</p>
+        <a href="https://www.iherb.com/pr/now-foods-magnesium-glycinate-180-tablets-100-mg-per-tablet/88819?ap=7846431" class="btn product-btn" data-affiliate="magnesium" target="_blank" rel="noopener sponsored">عرض المنتج على iHerb ←</a>
       </div>
-    </div>
+    </article>
 
-    <!-- Probiotic -->
-    <div class="card product-card">
-      <div class="product-img">
+    <article class="product-card reveal" style="--reveal-delay:100ms">
+      <div class="product-media">
         <span class="badge">عضوي</span>
-        <img src="images/probiotic.png" alt="Probiotic">
+        <img src="images/probiotic.png" alt="Probiotics 10 Strains" loading="lazy">
       </div>
-      <div class="product-info">
-        <div class="product-name">Probiotics 10 Strains</div>
-        <div class="product-price-row">
-          <span class="product-price">$18.59</span>
-          </div>
-        <p class="product-desc">بروبيوتيك 10 سلالات - صحة الأمعاء والمناعة</p>
-        <a href="https://www.iherb.com/pr/now-foods-probiotic-10-30-veg-capsules/64465?ap=7846431" class="product-btn">عرض المنتج ←</a>
+      <div class="product-body">
+        <h3 class="product-name">Probiotics 10 Strains</h3>
+        <div class="product-price">$18.59 <small>على iHerb</small></div>
+        <p class="product-desc">بروبيوتيك 10 سلالات — لصحة الأمعاء وتعزيز المناعة.</p>
+        <a href="https://www.iherb.com/pr/now-foods-probiotic-10-30-veg-capsules/64465?ap=7846431" class="btn product-btn" data-affiliate="probiotic" target="_blank" rel="noopener sponsored">عرض المنتج على iHerb ←</a>
       </div>
-    </div>
+    </article>
 
-    <!-- Zinc -->
-    <div class="card product-card">
-      <div class="product-img">
+    <article class="product-card reveal" style="--reveal-delay:200ms">
+      <div class="product-media">
         <span class="badge">٤.٧ ⭐</span>
-        <img src="images/zinc.png" alt="Zinc + Vitamin C">
+        <img src="images/zinc.png" alt="Zinc + Vitamin C + B6" loading="lazy">
       </div>
-      <div class="product-info">
-        <div class="product-name">Zinc + Vitamin C + B6</div>
-        <div class="product-price-row">
-          <span class="product-price">$5.59</span>
-          </div>
-        <p class="product-desc">زنك + فيتامين C + B6 - مناعة + بشرة (مضغ Cherry)</p>
-        <a href="https://www.iherb.com/pr/21st-century-zinc-plus-vitamins-c-b-6-chewable-cherry-90-tablets/41316?ap=7846431" class="product-btn">عرض المنتج ←</a>
+      <div class="product-body">
+        <h3 class="product-name">Zinc + Vitamin C + B6</h3>
+        <div class="product-price">$5.59 <small>على iHerb</small></div>
+        <p class="product-desc">زنك + فيتامين C + B6 — مناعة أقوى وبشرة أنقى (نكهة كرز مضغ).</p>
+        <a href="https://www.iherb.com/pr/21st-century-zinc-plus-vitamins-c-b-6-chewable-cherry-90-tablets/41316?ap=7846431" class="btn product-btn" data-affiliate="zinc" target="_blank" rel="noopener sponsored">عرض المنتج على iHerb ←</a>
       </div>
-    </div>
+    </article>
 
   </div>
 </section>
 
 <!-- DISCLAIMER -->
-<div class="max-w-7xl mx-auto px-4" style="padding:0 1.5rem">
+<div class="home-disclaimer reveal">
   <div class="disclaimer">
-    <strong>⚠️ تنويه مهم:</strong> هذا الموقع ليس نصيحة طبية. كل المنتجات معلومة للتثقيف فقط. استشر طبيب قبل ما تبدأ أي مكمل جديد.
+    <span>⚠️</span>
+    <div><strong>تنويه مهم:</strong> هذا الموقع لأغراض التثقيف فقط وليس نصيحة طبية. استشر طبيبك قبل البدء في أي مكمل غذائي جديد، خاصة إذا كنت حاملاً أو تتناول أدوية أخرى.</div>
   </div>
 </div>
 
 <!-- REVIEWS -->
-<section id="reviews" class="section">
-  <div class="section-header">
-    <span class="section-badge">المراجعات</span></div>
-    <h3 class="section-title">آراء الخبراء</h3>
-    <p class="section-sub">مراجعات معمقة لأهم المنتجات</p>
+<section class="section" id="reviews">
+  <div class="section-head reveal">
+    <span class="section-badge">المراجعات</span>
+    <h2 class="section-title">مراجعات معمقة بالعربي</h2>
+    <p class="section-sub">نقرأ التقارير والدراسات ونجرب — ثم نلخص لك كل ما تحتاج معرفته</p>
   </div>
   <div class="reviews-grid">
-    <a href="products/collagen.html" class="card review-card">
-      <div class="review-img">
-        <img src="https://cloudinary.images-iherb.com/image/upload/w_300/f_auto,q_auto:eco/images/cgn/cgn01033/l/478.jpg" alt="CollagenUP">
+
+    <a href="products/collagen.html" class="review-card reveal" style="--reveal-delay:0ms">
+      <div class="review-media">
+        <img src="https://cloudinary.images-iherb.com/image/upload/w_300/f_auto,q_auto:eco/images/cgn/cgn01033/l/478.jpg" alt="مراجعة CollagenUP" loading="lazy">
       </div>
-      <div class="review-content">
+      <div class="review-body">
         <div class="stars">★★★★★</div>
-        <h3>CollagenUP Peptides - هل يستاهل السعر؟</h3>
-        <p>⭐ مراجعة كاملة + مقارنة مع المنافسين</p>
+        <h3>CollagenUP Peptides — هل يستحق السعر فعلاً؟</h3>
+        <p>مراجعة كاملة + مقارنة صريحة مع أشهر المنافسين</p>
         <span class="read-more">اقرأ المراجعة ←</span>
       </div>
     </a>
-    <a href="products/omega3.html" class="card review-card">
-      <div class="review-img">
-        <img src="https://cloudinary.images-iherb.com/image/upload/w_300/f_auto,q_auto:eco/images/now/now01650/l/58.jpg" alt="Omega-3">
+
+    <a href="products/omega3.html" class="review-card reveal" style="--reveal-delay:100ms">
+      <div class="review-media">
+        <img src="https://cloudinary.images-iherb.com/image/upload/w_300/f_auto,q_auto:eco/images/now/now01650/l/58.jpg" alt="مراجعة أوميغا 3" loading="lazy">
       </div>
-      <div class="review-content">
+      <div class="review-body">
         <div class="stars">★★★★★</div>
-        <h3>أوميغا 3 - دليلك الكامل من iHerb</h3>
-        <p>⭐ مراجعة كاملة + أفضل الأنواع</p>
+        <h3>أوميغا 3 — دليلك الكامل قبل الشراء من iHerb</h3>
+        <p>مراجعة كاملة + أفضل الأنواع حسب احتياجك</p>
         <span class="read-more">اقرأ المراجعة ←</span>
       </div>
     </a>
-    <a href="products/magnesium.html" class="card review-card">
-      <div class="review-img">
-        <img src="https://cloudinary.images-iherb.com/image/upload/w_300/f_auto,q_auto:eco/images/now/now01289/l/62.jpg" alt="Magnesium">
+
+    <a href="products/magnesium.html" class="review-card reveal" style="--reveal-delay:200ms">
+      <div class="review-media">
+        <img src="https://cloudinary.images-iherb.com/image/upload/w_300/f_auto,q_auto:eco/images/now/now01289/l/62.jpg" alt="مراجعة المغنيسيوم" loading="lazy">
       </div>
-      <div class="review-content">
+      <div class="review-body">
         <div class="stars">★★★★½</div>
-        <h3>مغنيسيوم - هل فعلاً بيحسن النوم؟</h3>
-        <p>⭐ مراجعة كاملة + تجربة عملية</p>
+        <h3>مغنيسيوم جلايسينات — هل يحسن النوم فعلاً؟</h3>
+        <p>مراجعة كاملة + تجربة عملية لمدة شهر</p>
         <span class="read-more">اقرأ المراجعة ←</span>
       </div>
     </a>
+
+    <a href="products/ashwagandha.html" class="review-card reveal" style="--reveal-delay:0ms">
+      <div class="review-media">
+        <img src="https://cloudinary.images-iherb.com/image/upload/w_300/f_auto,q_auto:eco/images/gai/gai15028/s/54.jpg" alt="مراجعة الأشواغاندا" loading="lazy">
+      </div>
+      <div class="review-body">
+        <div class="stars">★★★★★</div>
+        <h3>أشواغاندا — عشب التوتر الأشهر عالمياً</h3>
+        <p>ما الذي تقوله الدراسات عن خفض الكورتيزول؟</p>
+        <span class="read-more">اقرأ المراجعة ←</span>
+      </div>
+    </a>
+
+    <a href="products/calcium.html" class="review-card reveal" style="--reveal-delay:100ms">
+      <div class="review-media">
+        <img src="https://cloudinary.images-iherb.com/image/upload/w_300/f_auto,q_auto:eco/images/cen/cen22263/l/52.jpg" alt="مراجعة الكالسيوم" loading="lazy">
+      </div>
+      <div class="review-body">
+        <div class="stars">★★★★☆</div>
+        <h3>كالسيوم + D3 — حماية عظامك تبدأ من هنا</h3>
+        <p>متى تحتاجه وكيف تضمن امتصاصه الكامل</p>
+        <span class="read-more">اقرأ المراجعة ←</span>
+      </div>
+    </a>
+
+    <a href="products/multivitamin.html" class="review-card reveal" style="--reveal-delay:200ms">
+      <div class="review-media">
+        <img src="https://cloudinary.images-iherb.com/image/upload/w_300/f_auto,q_auto:eco/images/now/now00372/l/88.jpg" alt="مراجعة الفيتامين المتعدد" loading="lazy">
+      </div>
+      <div class="review-body">
+        <div class="stars">★★★★☆</div>
+        <h3>فيتامين متعدد — هل يكفي منتج واحد يومياً؟</h3>
+        <p>تفكيك المكونات: ما الذي تحصل عليه فعلاً؟</p>
+        <span class="read-more">اقرأ المراجعة ←</span>
+      </div>
+    </a>
+
+    <a href="products/turmeric.html" class="review-card reveal" style="--reveal-delay:300ms">
+      <div class="review-media">
+        <img src="https://cloudinary.images-iherb.com/image/upload/w_300/f_auto,q_auto:eco/images/now/now04792/s/28.jpg" alt="مراجعة الكركم" loading="lazy">
+      </div>
+      <div class="review-body">
+        <div class="stars">★★★★★</div>
+        <h3>كركمين — مضاد الالتهاب الطبيعي الأقوى</h3>
+        <p>لماذا يجب أن يحتوي على فلفل أسود؟</p>
+        <span class="read-more">اقرأ المراجعة ←</span>
+      </div>
+    </a>
+
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section">
-  <div class="section-header">
-    <span class="section-badge">من نحن</span></div>
-    <h3 class="section-title">منصة صحتك أولاً</h3>
+<section class="section" id="about">
+  <div class="section-head reveal">
+    <span class="section-badge">من نحن</span>
+    <h2 class="section-title">منصة صحتك أولاً</h2>
   </div>
-  <div class="about-card card">
-    <h2>فريقنا بيلتقي معلومات صحية موثوقة</h2>
-    <p style="color:#94a3b8;margin-top:1rem;line-height:1.8">نوصي بمنتجات iHerb بناءً على جودتها وفعاليتها. السعر على موقعنا نفس السعر المباشر من iHerb - بدون أي فرق.</p>
+  <div class="about-card reveal">
+    <h2>فريق يجمع لك المعلومة الصحية الموثوقة في مكان واحد</h2>
+    <p>نراجع منتجات iHerb بناءً على جودتها وفعاليتها وتقييمات المشترين الحقيقية. لا نبيع منتجاتنا الخاصة ولا نرفع الأسعار — السعر عندنا هو نفس السعر المباشر من iHerb بالضبط. هدفنا أن توفر وقت البحث والمقارنة، وتشتري بثقة.</p>
   </div>
 </section>
 
-<!-- SOCIAL SHARING -->
-<section class="section" style="padding:3rem 1.5rem">
-  <div class="section-header" style="margin-bottom:1.5rem">
-    <span class="section-badge">شارك</span></div>
-    <h3 class="section-title">شارك هذا الموقع</h3>
+<!-- SOCIAL -->
+<section class="section" id="share">
+  <div class="section-head reveal" style="margin-bottom:2.2rem">
+    <span class="section-badge">شارك</span>
+    <h2 class="section-title">وجّه الناس للمنتجات الصحيحة</h2>
+    <p class="section-sub">شارك الموقع مع من يهمه — قد تساعد أحدهم على اتخاذ قرار أفضل</p>
   </div>
-  <div class="social-bar">
+  <div class="social-bar reveal">
     <div class="social-icons">
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://ahmeddiab120.github.io/health-affiliate-site" class="social-icon" title="facebook" target="_blank"><svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="#1877F2"/></svg></a>
-      <a href="https://x.com/intent/tweet?url=https://ahmeddiab120.github.io/health-affiliate-site&text=صحتك_أولاً" class="social-icon" title="X" target="_blank"><svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="#FFFFFF"/></svg></a>
-      <a href="https://www.instagram.com/ahmeddiab120" class="social-icon" title="instagram" target="_blank"><svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="#E4405F" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="#E4405F" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="#E4405F"/></svg></a>
-      <a href="https://www.tiktok.com/@ahmeddiab120" class="social-icon" title="tiktok" target="_blank"><svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" fill="#FFFFFF" style="fill:#FFFFFF !important"/><path d="M17.5 6.5c-1.1 0-2.1.4-3 1.1s-1.5 1.6-1.9 2.7H9.4c.1 1.2.4 2.3.9 3.3s.9 1.8 1.5 2.5c-.6.7-1.4 1.2-2.2 1.5s-1.8.5-2.8.5-2-.4-2.8-1.1s-1.2-1.6-1.3-2.6h2.1c.1.9.4 1.7.8 2.4s.8 1.3 1.3 1.7c.5.4 1.1.6 1.7.6.9 0 1.6-.3 2.2-.9s1.1-1.4 1.4-2.4h3.4V6.5h-3.4z" fill="#000000" style="fill:#000000 !important"/></svg></a>
-      <a href="https://wa.me/?text=صحتك_أولاً%20-%20مراجعات_%20صحية_%20من_iHerb:%20https://ahmeddiab120.github.io/health-affiliate-site" class="social-icon" title="whatsapp" target="_blank"><svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="#25D366"/></svg></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://ahmeddiab120.github.io/health-affiliate-site" class="social-icon" title="مشاركة عبر فيسبوك" target="_blank" rel="noopener" aria-label="فيسبوك">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="#1877F2"/></svg>
+      </a>
+      <a href="https://x.com/intent/tweet?url=https://ahmeddiab120.github.io/health-affiliate-site&text=صحتك_أولاً" class="social-icon" title="مشاركة عبر X" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="#e7e9ea"/></svg>
+      </a>
+      <a href="https://www.instagram.com/ahmeddiab120" class="social-icon" title="تابعنا على إنستجرام" target="_blank" rel="noopener" aria-label="إنستجرام">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="#E4405F" stroke-width="2"/><circle cx="12" cy="12" r="4.6" fill="none" stroke="#E4405F" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.4" fill="#E4405F"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@ahmeddiab120" class="social-icon" title="تابعنا على تيك توك" target="_blank" rel="noopener" aria-label="تيك توك">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 11-2.88-2.89c.28 0 .55.04.81.12v-3.5a6.37 6.37 0 00-.81-.05 6.34 6.34 0 106.34 6.34V8.76a8.16 8.16 0 004.77 1.52v-3.42a4.85 4.85 0 01-1.01-.17z" fill="#25F4EE"/><path d="M16.82 2.44a4.83 4.83 0 003.77 4.25v3.42a8.16 8.16 0 01-4.77-1.52v6.69a6.34 6.34 0 11-6.34-6.34c.27 0 .54.02.81.05v3.5a2.89 2.89 0 102.88 2.89V2h3.45z" fill="#FE2C55" opacity=".85"/></svg>
+      </a>
+      <a href="https://wa.me/?text=صحتك_أولاً%20-%20مراجعات%20صحية%20من%20iHerb:%20https://ahmeddiab120.github.io/health-affiliate-site" class="social-icon" title="مشاركة عبر واتساب" target="_blank" rel="noopener" aria-label="واتساب">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="#25D366"/></svg>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section id="contact" class="section" style="padding:3rem 1.5rem">
-  <div class="section-header" style="margin-bottom:1.5rem">
-    <span class="section-badge">تواصل</span></div>
-    <h3 class="section-title">تواصل معنا</h3>
+<!-- CTA / CONTACT -->
+<section class="section" id="contact">
+  <div class="section-head reveal" style="margin-bottom:2.2rem">
+    <span class="section-badge">تواصل</span>
+    <h2 class="section-title">عندك سؤال عن منتج معين؟</h2>
   </div>
-  <div class="cta-card card">
-    <h2>لو عندك سؤال عن منتج معين</h2>
-    <p style="color:#94a3b8;margin-bottom:1.5rem">ابعتلي ورد عليك</p>
-    <a href="https://wa.me/201000000000?text=سلام_على_صحتي_أولاً" class="btn btn-outline" style="font-size:1.1rem;padding:0.8rem 2rem">💬 واتساب ←</a>
+  <div class="cta-card reveal">
+    <h2>اسألنا قبل ما تشتري</h2>
+    <p>فريقنا يرد على استفساراتك حول أي منتج — الجرعة، التفاعلات، أو البدائل الأنسب لحالتك.</p>
+    <a href="https://wa.me/201000000000?text=سلام،%20عندي%20سؤال%20عن%20منتج%20من%20صحتك%20أولاً" class="btn" target="_blank" rel="noopener">💬 راسلنا واتساب</a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-brand">
-    <div class="logo-icon">💚</div>
-    <span style="color:#e2e8f0;font-weight:700;font-size:1.1rem">صحتك <span style="color:#22c55e">أولاً</span></span></div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-icon">💚</span>
+      صحتك <b>أولاً</b>
+    </div>
+    <ul class="footer-links">
+      <li><a href="disclaimer.html">تنويه قانوني</a></li>
+      <li><a href="privacy.html">سياسة الخصوصية</a></li>
+      <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+    <p class="footer-copy">© <span data-year>2026</span> صحتك أولاً · iHerb Affiliate ID: <b>7846431</b></p>
   </div>
-  <ul class="footer-links">
-    <li><a href="disclaimer.html">تنويه قانوني</a></li>
-    <li><a href="privacy.html">سياسة الخصوصية</a></li>
-    <li><a href="index.html#contact">تواصل</a></li>
-  </ul>
-  <p style="font-size:0.9rem;line-height:1.8">© 2026 صحتك أولاً | iHerb Affiliate ID: 7846431</p>
 </footer>
 
-<!-- SCROLL ANIMATIONS -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  // Hide loader
-  const loader = document.getElementById('loader');
-  if (loader) {
-    setTimeout(() => {
-      if (loader) {
-        loader.classList.add('fade-out');
-        setTimeout(() => { if (loader) loader.style.display = 'none'; }, 500);
-      }
-    }, 800);
-  }
-
-  // Scroll to top
-  const scrollTop = document.getElementById('scrollTop');
-  if (scrollTop) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        scrollTop.classList.add('visible');
-      } else {
-        scrollTop.classList.remove('visible');
-      }
-    });
-    scrollTop.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
-
-  // Header effect
-  const header = document.querySelector('header');
-  if (header) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-  }
-
-  // Mobile menu
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('navLinks');
-  if (hamburger && navLinks) {
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  }
-});
-</script>
-
-</head></body>
+<script src="js/main.js"></script>
+</body>
 </html>
